@@ -1,0 +1,9 @@
+<apex:page lightningStylesheets="true" Controller="RepositoryListController">
+    <apex:pageBlock title="Most Starred Repositories of Java">
+        <apex:pageBlockTable value="{! repositories }" var="rep">
+            <apex:column value="{! rep.Name }"/>
+            <apex:column value="{! rep.Number_Of_Stars__c }"/>
+            <apex:column value="{! rep.Number_Of_Forks__c }"/>
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+</apex:page>
